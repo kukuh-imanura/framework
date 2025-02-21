@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-slate-50;
+    @apply bg-light text-dark dark:bg-dark dark:text-light;
   }
 
   h1 {
@@ -16,7 +16,7 @@
   }
 
   a {
-    @apply block;
+    @apply inline-block hover:opacity-50 active:opacity-100;
   }
 }
 
@@ -27,5 +27,28 @@
 }
 
 @theme {
-  /* --color-light: oklch(1 1 360); */
+  --color-light: #f5f5f5;
+  --color-dark: #1f1f1f;
+
+  /* BRAND LIGHT */
+  --color-brand-comp: #ff8585;
+  --color-brand-triadic-d: #ff85ff;
+  --color-brand-tetradic-d: #c285ff;
+  --color-brand-analogous-d: #85c2ff;
+  --color-brand: #85ffff;
+  --color-brand-monoc: #52ffff;
+  --color-brand-analogous-l: #85ffc2;
+  --color-brand-tetradic-l: #c2ff85;
+  --color-brand-triadic-l: #ffff85;
+
+  /* BRAND DARK */
+  --color-brand-dark-comp: #ffff47;
+  --color-brand-dark-triadic-d: #ff47a3;
+  --color-brand-dark-tetradic-d: #ff4747;
+  --color-brand-dark-analogous-d: #a347ff;
+  --color-brand-dark: #4747ff;
+  --color-brand-dark-mono: #1414ff;
+  --color-brand-dark-analogous-l: #47a3ff;
+  --color-brand-dark-tetradic-l: #47ff47;
+  --color-brand-dark-triadic-l: #47ffa3;
 }
