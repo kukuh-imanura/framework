@@ -1,28 +1,27 @@
 import PropTypes from "prop-types";
-import Logo from "@atoms/Logo";
+import Logo from "@mols/Logo";
 import { Link } from "react-router-dom";
-import Button from "@atoms/Button";
+import Button from "@btns/Button";
 
 const Navbar = ({ children, className, onClick }) => {
   return (
     <nav
-      className={`${className} sticky top-0 flex items-center justify-between px-5 py-3`}
+      className={`${className} sticky top-0 flex w-full items-center justify-between px-5 py-3`}
       onClick={onClick}
     >
-      <Logo />
+      <Logo text="Frontend" />
 
       <nav className="flex gap-3">
         {children || (
           <>
-            <Link to={"/"}>Menu</Link>
-            <Link to={"/"}>Menu</Link>
-            <Link to={"/"}>Menu</Link>
+            <Link to={"/"}>Home</Link>
+            <Link to={"/components"}>Components</Link>
           </>
         )}
       </nav>
 
       <div>
-        <Button to={"/"} />
+        <Button to={"/login"} text="Login" />
       </div>
     </nav>
   );

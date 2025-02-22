@@ -1,9 +1,19 @@
-import Navbar from "./organisms/Navbar";
+import Navbar from "@orgs/Navbar";
+import Sidebar from "./organisms/Sidebar";
+import Button from "./atoms/button/Button";
 
 const Components = () => {
   return (
-    <div className="bg-bl">
-      <Navbar className={"bg-dark/5"} />
+    <div className="flex h-screen w-full flex-col">
+      <Navbar />
+
+      <div className="flex h-full w-full">
+        <Sidebar />
+
+        <div className="flex w-full items-center justify-center">
+          <Button />
+        </div>
+      </div>
     </div>
   );
 };

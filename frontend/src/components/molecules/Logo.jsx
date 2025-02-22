@@ -1,11 +1,15 @@
 import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ButtonIcon from "./../atoms/button/ButtonIcon";
 
 const Logo = ({ onClick, icon = "fab fa-react", text = "Logo" }) => {
   return (
     <div className="flex items-center gap-0.5 select-none" onClick={onClick}>
-      <FontAwesomeIcon icon={icon} size="2x" />
-      <p className="text-2xl font-bold tracking-tighter">{text}</p>
+      <ButtonIcon
+        icon={icon}
+        size={"2x"}
+        className="cursor-default text-black dark:text-white"
+      />
+      <h4 className="tracking-tighter">{text}</h4>
     </div>
   );
 };

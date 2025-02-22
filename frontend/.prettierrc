@@ -3,5 +3,5 @@
   "tailwindStylesheet": "./src/index.css",
   "tailwindConfig": "",
   "tailwindAttributes": ["twColors"],
-  "tailwindFunctions": ["infunct"]
+  "tailwindFunctions": ["clsx"]
 }
