@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ButtonIcon = ({
   children,
-  className = "text-black dark:text-white",
+  className = "buttonIcon",
   onClick,
   icon = "fab fa-react",
   size = "2x",

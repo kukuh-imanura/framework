@@ -24,7 +24,7 @@
   h4,
   h5,
   h6 {
-    @apply font-bold leading-tight text-black dark:text-white;
+    @apply leading-tight font-bold text-black dark:text-white;
   }
 
   h3 {
@@ -44,7 +44,21 @@
   }
 
   a {
-    @apply inline-block font-semibold hover:text-black dark:hover:text-white;
+    @apply inline-block font-semibold select-none hover:text-black dark:hover:text-white;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"] {
+    @apply rounded border-2 border-dark-secondary px-3 py-2 outline-none placeholder:text-dark-secondary/50 hover:border-brand-dark focus:border-brand-dark;
+  }
+
+  input[type="checkbox"] {
+    @apply h-4 w-4 cursor-pointer appearance-none rounded border border-dark-secondary accent-brand-dark select-none checked:border-0 checked:border-brand-dark checked:bg-brand-dark hover:border-2 hover:border-brand-dark;
   }
 }
 
@@ -54,11 +68,39 @@
   }
 
   .buttonPrimary {
-    @apply bg-brand-dark text-light hover:bg-brand-dark/90 dark:bg-brand/90 dark:text-dark dark:hover:bg-brand hover:text-white dark:hover:text-black;
+    @apply bg-brand-dark text-light hover:bg-brand-dark/90 hover:text-white dark:bg-brand/90 dark:text-dark dark:hover:bg-brand dark:hover:text-black;
   }
 
   .buttonSecondary {
-    @apply border-brand-dark text-brand-dark hover:bg-brand-dark dark:border-brand dark:text-brand dark:hover:bg-brand border hover:text-white dark:hover:text-black;
+    @apply border border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white dark:border-brand dark:text-brand dark:hover:bg-brand dark:hover:text-black;
+  }
+
+  .buttonIcon {
+    @apply text-black dark:text-white;
+  }
+
+  .checkInput {
+    @apply flex items-center gap-1 px-3 py-2;
+  }
+
+  .checkLeading {
+    @apply flex w-full justify-between px-3 py-2;
+  }
+
+  .checkBox {
+    @apply relative flex items-center justify-center;
+  }
+
+  .checkIcon {
+    @apply pointer-events-none absolute h-full w-full text-white opacity-0;
+  }
+
+  .textError {
+    @apply leading-none text-red-500;
+  }
+
+  .textDisabled {
+    @apply text-dark-secondary/50;
   }
 }
 

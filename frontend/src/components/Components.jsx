@@ -1,6 +1,6 @@
 import Navbar from "@orgs/Navbar";
 import Sidebar from "./organisms/Sidebar";
-import Button from "./atoms/button/Button";
+import Input from "./atoms/input/Input";
 
 const Components = () => {
   return (
@@ -11,7 +11,7 @@ const Components = () => {
         <Sidebar />
 
         <div className="flex w-full items-center justify-center">
-          <Button />
+          <Input />
         </div>
       </div>
     </div>
